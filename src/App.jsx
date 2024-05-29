@@ -1,12 +1,14 @@
 import React from "react";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import Mainn from "./Components/Main/Mainn";
 
-const App = () => {
-  return (
-    <>
-      <Sidebar />
-    </>
-  );
-};
+function App() {
+	return (
+		<>
+			<Sidebar />
+			<Mainn />
+		</>
+	);
+}
 
 export default App;
