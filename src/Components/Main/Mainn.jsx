@@ -29,19 +29,19 @@ const Mainn = () => {
 						</div>
 						<div className="cards">
 							<div className="card">
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing eli.</p>
+								<p>Suggest places to visit in summer vacation in India</p>
 								<img src={assets.compass_icon} alt="" />
 							</div>
 							<div className="card">
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing eli.</p>
+								<p>Explain the theory of General Relativity</p>
 								<img src={assets.bulb_icon} alt="" />
 							</div>
 							<div className="card">
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing eli.</p>
+								<p>Brainstorm team bonding activities for our work retreat</p>
 								<img src={assets.message_icon} alt="" />
 							</div>
 							<div className="card">
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing eli.</p>
+								<p>Improve the readability of the following code</p>
 								<img src={assets.code_icon} alt="" />
 							</div>
 						</div>
@@ -78,7 +78,9 @@ const Mainn = () => {
 						<div>
 							<img src={assets.gallery_icon} alt="" />
 							<img src={assets.mic_icon} alt="" />
-							<img onClick={() => onSent()} src={assets.send_icon} alt="" />
+							{input ? (
+								<img onClick={() => onSent()} src={assets.send_icon} alt="" />
+							) : null}
 						</div>
 					</div>
 					<p className="bottom-info">
